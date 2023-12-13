@@ -1,0 +1,119 @@
+body {
+    font-family: sans-serif;
+    margin: 0 50px;
+    background-color: #0f0520;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .app {
+    background-color: #ffffff;
+    width: 1000px;
+    height: 800px;
+    border: 5px solid #7bc7da;
+    border-radius: 8px;
+    padding: 10px;
+    overflow-y: scroll;
+  }
+  
+  .app::-webkit-scrollbar {
+    width: 0 !important;
+  }
+
+
+  .text-center {
+    text-align: center;
+  }
+  
+  .my-3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .text-center.my-3 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  h5.text-center.my-3 {
+    font-size: 1.5em;
+    /* Adjust the font size as needed */
+    color: #000000; /* Set your desired text color */
+    background-color: #ecf0f1; /* Set your desired background color */
+    padding: 0.5em;
+    border-radius: 5px;
+    /* Add any other styles you prefer */
+  }
+
+
+  h4.mb-3 {
+    font-size: 2em; /* Adjust the font size as needed */
+    color: #010704; /* Set your desired text color */
+    text-align: center;
+    margin-bottom: 1.5rem; /* Adjust the margin as needed */
+  }
+  
+  /* Optional: Add a subtle background color and padding */
+  h4.mb-3 {
+    background-color: #f4f4f4; /* Set your desired background color */
+    padding: 0.5em;
+    border-radius: 5px;
+  }
+  
+  /* Optional: Add a box-shadow for a subtle effect */
+  h4.mb-3 {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjust the shadow as needed */
+  }
+
+
+
+
+
+  
+  #addNew {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(74, 181, 243, 0.35);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .fa-plus {
+    background-color: #9fd3db;
+    padding: 3px;
+    border-radius: 3px;
+  }
+  
+  #tasks {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  
+  #tasks div {
+    border: 3px solid #000000;
+    background-color: #b7d3fd;
+    border-radius: 6px;
+    padding: 5px;
+    display: grid;
+    gap: 4px;
+  }
+  
+  #tasks div .options {
+    justify-self: center;
+    display: flex;
+    gap: 20px;
+  }
+  
+  #tasks div .options i {
+    cursor: pointer;
+  }
+  
+  #msg {
+    color: red;
+  }
